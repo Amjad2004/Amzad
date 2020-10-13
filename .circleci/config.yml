@@ -1,13 +1,32 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
-# Use a package of configuration called an orb.
+
 orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
-# Orchestrate or schedule a set of jobs
-workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
-    jobs:
-      - welcome/run
+ android: circleci/android@0.2.1
+
+jobs:
+  build:
+    executor: android/android
+        
+    steps:
+      - checkout
+      - run:
+          command: ./gradlew build androi@0.1.5.0
+          Propertys: setup circleci config Android\So App Version E.A.P 1.2.1 
+          Circleci: [import  matplotlib.pyplot as plt]
+          Existing : [1950, 1951, 1952, ..., 2100]
+          Geta: 2.538, 2.57, 2.62, ..., 10.85]
+          Axis Title: plt.plot(year, pop
+          Add historical data : plt.xlabel ('year') plt.ylabel('population')
+          Setup: plt.title('world population projections') plt.^&yticks( [0, 2, 4, 8, 10,]
+          Guide: ['0' , '2B' , '4B' , '6B' , '8B' , '10B' ]
+          
+
+
+
+
+
+
+
+
+
+
